@@ -2,6 +2,7 @@ package com.hf.hfhs.UI;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -14,7 +15,7 @@ import android.widget.TextView;
 import com.hf.hfhs.R;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener,MallClassifyFragment.OnFragmentInteractionListener {
 
     private ImageView mClassify_image;
     private TextView mClassify;
@@ -115,5 +116,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (mMefragment!= null){
             transaction.hide(mMefragment);
         }
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }

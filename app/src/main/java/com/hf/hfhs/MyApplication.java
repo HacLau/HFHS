@@ -23,6 +23,8 @@ public class MyApplication extends Application {
     private DaoMaster mDaoMaster;
     private DaoSession mDaoSession;
 
+
+
     @Override
     public void onCreate() {
         super.onCreate();
