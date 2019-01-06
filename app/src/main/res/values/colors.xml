@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWihte">#FFFFFF</color>
+
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black">#80000000</color>
+    <color name="gray_eaeaea">#FFEAEAEA</color>
+    <color name="lt_gray">#FFEEEEEE</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="vip_red">#FFFF0713</color>
+    <color name="vip_orange">#FFFF6F03</color>
+    <color name="orange">#FFfc9500</color>
+    <color name="black">#FF000000</color>
+    <color name="dark_gray">#FF3D3D3D</color>
+    <color name="dark_blue">#FF7ECEF4</color>
+    <color name="light_blue">#FF9EDAF7</color>
+    <color name="my_blue">#FF70BAF2</color>
+    <color name="home_blue">#FF49a8ef</color>
+    <color name="button_blue_pressed">#FF2164EB</color>
+    <color name="buy_green">#FF0FBC62</color>
+    <color name="buy_red">#FFF34334</color>
+    <color name="light_red">#FFF05868</color>
+    <color name="selected_color">#FF3ADBFD</color>
+    <color name="screen_bg">#FFF3F3F3</color>
+    <!--    <color name="title_color">#FF00ADBA</color>-->
+    <color name="title_color">#FF3F78EB</color>
+    <color name="image_loading">#FFE8E8E8</color>
+
+
+    <color name="fragment_my_gray">#FF2D5E8D</color>
+    <color name="dialog_bg_color">#00FFFFFF</color>
+
+    <color name="text_gray">#FF909193</color>
+    <color name="back_page">#F1F2F3</color>
+    <color name="rx_button_text_color">#FFEA10 </color>
+    <color name="white2">#f5f3f3</color>
+    <color name="colorRed">#d50f09</color>
+    <color name="rx_free_color">#FF6772</color>
+    <color name="rx_money_color">#007AFF</color>
+    <color name="blue_gray">#336fff</color>
+    <color name="title_blue">#FF26263E</color>
+    <color name="gray_text">#FF999999</color>
+    <color name="gray_color">#90777777</color>
+    <color name="commo_text_color">#ff333333</color>
+    <color name="topic_text_color">#FFA14A</color>
+    <color name="gray">#FFC0C0C0</color>
+
+    <color name="mall_icon_pre">#0174FF</color>
+    <color name="mall_icon_nor">#999999</color>
+
+
+    <color name="background">#f1f1f1</color>
+
+    <color name="sred">#ff4141</color>
+    <color name="gold">#d8ab5c</color>
+    <color name="pink">#ffc0cb</color>
+    <color name="green">#FF34A350</color>
+    <color name="rx_time">#FF202020</color>
+</resources>

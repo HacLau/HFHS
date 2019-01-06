@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleBar">
+        <attr name="tbImage" format="reference" />
+        <attr name="tbText" format="string" />
+        <attr name="tbRightText" format="string" />
+        <attr name="tbLeftText" format="string" />
+        <attr name="tbTextColor" format="color" />
+        <attr name="tbTopPadding" format="boolean" />
+        <attr name="tbRightImage" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TasksCompletedView">
+        <attr name="radius" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="ringColor" format="color"/>
+        <attr name="ringBgColor" format="color"/>
+    </declare-styleable>
+
+    <!--<declare-styleable name="CircularProgressBar">-->
+    <!--<attr name="cpb_progress" format="integer" />-->
+    <!--<attr name="cpb_progressbar_color" format="color" />-->
+    <!--<attr name="cpb_background_progressbar_color" format="color" />-->
+    <!--<attr name="cpb_progressbar_width" format="dimension" />-->
+    <!--<attr name="cpb_background_progressbar_width" format="dimension" />-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="RxButton">
+        <attr name="button_icon" format="reference|integer"/>
+
+        <attr name="top_text" format="string" />
+        <attr name="top_text_color" format="color" />
+        <attr name="top_text_size" format="integer" />
+
+        <attr name="bottom_text" format="string" />
+        <attr name="bottom_text_color" format="color" />
+        <attr name="bottom_text_size" format="integer" />
+
+    </declare-styleable>
+</resources>
