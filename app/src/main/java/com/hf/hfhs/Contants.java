@@ -1,6 +1,7 @@
 package com.hf.hfhs;
 
 import com.hf.hfhs.bean.CartListBeanModel;
+import com.hf.hfhs.bean.GoodsIs;
 import com.hf.hfhs.bean.GoodsListBeanModel;
 
 import java.util.ArrayList;
@@ -36,4 +37,53 @@ public class Contants {
         }
     };
     public final static String[] titles = {"商品", "详情"};
+
+
+    public static List<Integer> NF_8 = new ArrayList<Integer>(){
+        {
+            add(R.mipmap.banner1);
+            add(R.mipmap.banner2);
+            add(R.mipmap.banner3);
+            add(R.mipmap.banner4);
+        }
+
+    };
+
+    public static List<GoodsIs> NF_1 = new ArrayList<GoodsIs>(){
+        {
+            add(new GoodsIs(1, new ArrayList<Integer>() {{
+                add(R.mipmap.banner1);
+                add(R.mipmap.banner1);
+                add(R.mipmap.banner1);
+                add(R.mipmap.banner1);
+            }}));
+
+            add(new GoodsIs(2, new ArrayList<Integer>() {{
+                add(R.mipmap.banner2);
+                add(R.mipmap.banner2);
+                add(R.mipmap.banner2);
+                add(R.mipmap.banner2);
+            }}));
+
+            add(new GoodsIs(3, new ArrayList<Integer>() {{
+                add(R.mipmap.banner3);
+                add(R.mipmap.banner3);
+                add(R.mipmap.banner3);
+                add(R.mipmap.banner3);
+            }}));
+
+            add(new GoodsIs(4, new ArrayList<Integer>() {{
+                add(R.mipmap.banner4);
+                add(R.mipmap.banner4);
+                add(R.mipmap.banner4);
+                add(R.mipmap.banner4);
+            }}));
+
+
+        }
+
+    };
+
+
+
 }

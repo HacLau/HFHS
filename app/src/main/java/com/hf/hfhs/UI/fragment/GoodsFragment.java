@@ -4,6 +4,7 @@ import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,11 +13,15 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.hf.hfhs.R;
+import com.hf.hfhs.bean.GoodsIs;
 import com.hf.hfhs.databinding.FragmentGoodsBinding;
 import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
 import com.youth.banner.listener.OnBannerListener;
 import com.youth.banner.loader.ImageLoader;
+
+import static com.hf.hfhs.Contants.NF_1;
+import static com.hf.hfhs.Contants.NF_8;
 
 import java.util.ArrayList;
 
@@ -29,6 +34,7 @@ public class GoodsFragment extends BaseFragment implements OnBannerListener {
     public FragmentGoodsBinding mBinding;
     private String mParam1;
     private String mParam2;
+    private String id;
 
     private OnFragmentInteractionListener mListener;
     private ArrayList<Integer> list_path = new ArrayList<>();
@@ -61,8 +67,11 @@ public class GoodsFragment extends BaseFragment implements OnBannerListener {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         mBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_goods, container, false);
+        id = (String)getActivity().getIntent().getExtras().get("id");
+        Log.e("id",id);
         initView();
         initData();
+
         return mBinding.getRoot();
     }
 
@@ -94,9 +103,15 @@ public class GoodsFragment extends BaseFragment implements OnBannerListener {
         mBinding.banner.setDelayTime(5000);
         mBinding.banner.isAutoPlay(true);
         mBinding.banner.setIndicatorGravity(BannerConfig.CENTER);
-        mBinding.banner.setImages(list_path)
-                .setOnBannerListener(this)
-                .start();
+
+        for(GoodsIs goods : NF_1){
+            if ((goods.getId() + "") .equals(id)){
+                mBinding.banner.setImages(goods.getImageList())
+                        .setOnBannerListener(this)
+                        .start();
+            }
+        }
+
     }
 
     /**

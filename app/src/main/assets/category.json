@@ -5,7 +5,7 @@
       "type": "category",
       "dataList": [
         {
-          "id": "",
+          "id": "1",
           "desc": "",
           "type": "category",
           "title": "大连8头",
@@ -16,7 +16,7 @@
           "offline_time": ""
         },
         {
-          "id": "",
+          "id": "2",
           "desc": "",
           "type": "category",
           "title": "大连6头",
@@ -40,7 +40,7 @@
       "type": "category",
       "dataList": [
         {
-          "id": "",
+          "id": "3",
           "desc": "",
           "type": "category",
           "title": "8头鲍鱼",
@@ -51,7 +51,7 @@
           "offline_time": ""
         },
         {
-          "id": "",
+          "id": "4",
           "desc": "",
           "type": "category",
           "title": "6头鲍鱼",

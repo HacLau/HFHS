@@ -91,6 +91,7 @@ public class MallClassifyFragment extends BaseFragment {
                 //ToastUtil.showToast(getActivity(),dataListBean.getTitle());
                 Bundle bundle = new Bundle();
                 bundle.putString("title",dataListBean.getTitle());
+                bundle.putString("id",dataListBean.getId());
                 gotoActivity(mContext, GoodsDetailActivity.class,bundle);
             }
         });
