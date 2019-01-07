@@ -1,21 +1,21 @@
-package com.hf.hfhs.UI;
+package com.hf.hfhs.UI.activity;
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.hf.hfhs.R;
+import com.hf.hfhs.UI.fragment.MallClassifyFragment;
+import com.hf.hfhs.UI.fragment.MeFragment;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener,MallClassifyFragment.OnFragmentInteractionListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener,MallClassifyFragment.OnFragmentInteractionListener {
 
     private ImageView mClassify_image;
     private TextView mClassify;
@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         initView();
         initClick();
+        InitFragment(CLASSIFYFRAGMENT);
     }
 
     private void initView() {
@@ -61,6 +62,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }else{
                     transaction.show(mMallClassfragment);
                 }
+
+                mClassify_image.setImageResource(R.mipmap.classify_pre);
+                mMe_image.setImageResource(R.mipmap.mine);
+                mClassify.setTextColor(Color.parseColor("#3157F8"));
+                mMe.setTextColor(Color.parseColor("#333333"));
+
                 break;
 
             case 2:
@@ -70,6 +77,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }else{
                     transaction.show(mMefragment);
                 }
+
+                mClassify_image.setImageResource(R.mipmap.classify);
+                mMe_image.setImageResource(R.mipmap.mine_pre);
+
+                mClassify.setTextColor(Color.parseColor("#333333"));
+                mMe.setTextColor(Color.parseColor("#3157F8"));
 
                 break;
 
@@ -89,20 +102,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.main_ll_Classify:
                 //点击分类相应的图文变化
                 InitFragment(CLASSIFYFRAGMENT);
-                mClassify_image.setImageResource(R.mipmap.classify_pre);
-                mMe_image.setImageResource(R.mipmap.mine);
-                mClassify.setTextColor(Color.parseColor("#3157F8"));
-                mMe.setTextColor(Color.parseColor("#333333"));
-
                 break;
 
             case R.id.main_ll_Me:
                 InitFragment(MEFRAGMENT);
-                mClassify_image.setImageResource(R.mipmap.classify);
-                mMe_image.setImageResource(R.mipmap.mine_pre);
-
-                mClassify.setTextColor(Color.parseColor("#333333"));
-                mMe.setTextColor(Color.parseColor("#3157F8"));
                 break;
         }
 

@@ -64,6 +64,7 @@ public class ClassifyAdapter extends BaseAdapter {
         } else {
             viewHold = (ViewHold) convertView.getTag();
         }
+
         ClassifyItemAdapter adapter = new ClassifyItemAdapter(context, dataList);
         viewHold.blank.setText(dataBean.getModuleTitle());
         viewHold.gridView.setAdapter(adapter);

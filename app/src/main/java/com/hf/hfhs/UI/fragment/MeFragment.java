@@ -1,4 +1,4 @@
-package com.hf.hfhs.UI;
+package com.hf.hfhs.UI.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.hf.hfhs.R;
+import com.hf.hfhs.UI.fragment.BaseFragment;
 
 
 public class MeFragment extends BaseFragment {

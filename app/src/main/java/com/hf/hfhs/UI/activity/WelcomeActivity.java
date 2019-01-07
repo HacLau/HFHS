@@ -1,4 +1,4 @@
-package com.hf.hfhs.UI;
+package com.hf.hfhs.UI.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;

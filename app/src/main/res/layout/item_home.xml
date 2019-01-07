@@ -14,7 +14,7 @@
         android:paddingLeft="20dp"
         android:visibility="gone" />
 
-    <com.lsl.cymall.view.GridViewForScrollView
+    <com.hf.hfhs.view.GridViewForScrollView
         android:id="@+id/gridView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

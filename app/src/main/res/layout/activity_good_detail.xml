@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data></data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/white2"
+        tools:context="com.koudai.borrow.activity.mall.GoodsDetailActivity">
+        <com.hf.hfhs.view.TitleBar
+            android:id="@+id/tb_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/title_color"
+            app:tbImage="@mipmap/ico_back_white"
+            app:tbText="商品详情"
+            app:tbTextColor="@color/white"
+            app:tbTopPadding="false" />
+        <LinearLayout
+            android:id="@+id/lv_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tb_title"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:scrollbars="none">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="wrap_content"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="#00ff00"
+                app:tabTextColor="@color/black"
+                app:tabIndicatorColor="#00ff00"
+                app:tabGravity="center"
+                android:layout_height="50dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background"/>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

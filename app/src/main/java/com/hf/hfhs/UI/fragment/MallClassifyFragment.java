@@ -1,4 +1,4 @@
-package com.hf.hfhs.UI;
+package com.hf.hfhs.UI.fragment;
 
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -14,6 +14,8 @@ import android.widget.ListView;
 
 import com.google.gson.Gson;
 import com.hf.hfhs.R;
+import com.hf.hfhs.UI.activity.GoodsDetailActivity;
+import com.hf.hfhs.UI.fragment.BaseFragment;
 import com.hf.hfhs.adapter.ClassifyAdapter;
 import com.hf.hfhs.adapter.ClassifyMenuAdapter;
 import com.hf.hfhs.bean.CategoryBean;
@@ -74,19 +76,22 @@ public class MallClassifyFragment extends BaseFragment {
 
     private void initView(View view) {
         lv_menu = (ListView) view.findViewById(R.id.lv_menu);
-        //tv_title = (TextView) rootView.findViewById(R.id.tv_title);
+
         lv_home = (ListView) view.findViewById(R.id.lv_home);
+
         classifyMenuAdapter = new ClassifyMenuAdapter(this.getActivity(), menuList);
         lv_menu.setAdapter(classifyMenuAdapter);
+
         classifyAdapter = new ClassifyAdapter(this.getActivity(), homeList);
         lv_home.setAdapter(classifyAdapter);
+
         classifyAdapter.setListener(new ClassifyAdapter.OnGridViewItemClickListener() {
             @Override
             public void onGridViewItemClickListener(CategoryBean.DataBean.DataListBean dataListBean) {
                 //ToastUtil.showToast(getActivity(),dataListBean.getTitle());
                 Bundle bundle = new Bundle();
                 bundle.putString("title",dataListBean.getTitle());
-//                gotoActivity(mContext, GoodsListActivity.class,bundle);
+                gotoActivity(mContext, GoodsDetailActivity.class,bundle);
             }
         });
         lv_menu.setOnItemClickListener(new AdapterView.OnItemClickListener() {

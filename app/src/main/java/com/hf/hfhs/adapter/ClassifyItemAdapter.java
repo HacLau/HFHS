@@ -1,6 +1,10 @@
 package com.hf.hfhs.adapter;
 
+import android.content.ContentResolver;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,15 +17,11 @@ import com.bumptech.glide.Glide;
 import com.hf.hfhs.R;
 import com.hf.hfhs.bean.CategoryBean;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 
-/**
- * author：wangzihang
- * date： 2017/8/8 19:15
- * desctiption：
- * e-mail：wangzihang@xiaohongchun.com
- */
 
 public class ClassifyItemAdapter extends BaseAdapter {
 
@@ -70,10 +70,11 @@ public class ClassifyItemAdapter extends BaseAdapter {
             viewHold = (ViewHold) convertView.getTag();
         }
         viewHold.tv_name.setText(subcategory.getTitle());
-        //Uri uri = Uri.parse(subcategory.getImgURL());
-        //viewHold.iv_icon.setImageURI(uri);
-        //mAppAction.displayImage(viewHold.iv_icon,subcategory.getImgURL(),R.mipmap.ic_launcher);
-        Glide.with(context).load(subcategory.getImgURL()).into(viewHold.iv_icon);
+        try {
+            viewHold.iv_icon.setImageBitmap(getBitmap(subcategory.getImgURL()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return convertView;
 
 
@@ -82,6 +83,11 @@ public class ClassifyItemAdapter extends BaseAdapter {
     private static class ViewHold {
         private TextView tv_name;
         private ImageView iv_icon;
+    }
+
+    private Bitmap getBitmap(String image) throws IOException {
+        InputStream open = context.getAssets().open(image);
+        return BitmapFactory.decodeStream(open);
     }
 
 }

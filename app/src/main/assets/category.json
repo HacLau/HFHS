@@ -1,0 +1,110 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "type": "category",
+      "dataList": [
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "大连8头",
+          "imgURL": "pic/hs.jpg",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "大连6头",
+          "imgURL": "pic/hs.jpg",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        }
+      ],
+      "moreIcon": "https://wicdn.xiaohongchun.com/xhc-plat/1499690581646_JYRiS8rkdp.png",
+      "moreText": "",
+      "moduleStyle": "nothing",
+      "moduleTitle": "海参",
+      "moreLinkType": "storeTags",
+      "interfaceLink": "",
+      "moreLinkParam": "",
+      "moreTextDisplay": "true"
+    },
+    {
+      "type": "category",
+      "dataList": [
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "8头鲍鱼",
+          "imgURL": "pic/by.jpg",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "6头鲍鱼",
+          "imgURL": "pic/by.jpg",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        }
+      ],
+      "moreIcon": "https://wicdn.xiaohongchun.com/xhc-plat/1499690569496_jKyaBHe2Ze.png",
+      "moreText": "",
+      "moduleStyle": "nothing",
+      "moduleTitle": "鲍鱼",
+      "moreLinkType": "topic",
+      "interfaceLink": "",
+      "moreLinkParam": "",
+      "moreTextDisplay": "true"
+    },
+    {
+      "type": "category",
+      "dataList": [
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "洗发",
+          "imgURL": "pic/hs.jpg",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        },
+        {
+          "id": "",
+          "desc": "",
+          "type": "category",
+          "title": "护发",
+          "imgURL": "pic/hs.jpg",
+          "linkType": "storeTags",
+          "linkParam": "",
+          "online_time": "",
+          "offline_time": ""
+        }
+      ],
+      "moreIcon": "https://wicdn.xiaohongchun.com/xhc-plat/1499690549966_xbr3ACA38e.png",
+      "moreText": "",
+      "moduleStyle": "nothing",
+      "moduleTitle": "干参礼盒",
+      "moreLinkType": "html",
+      "interfaceLink": "",
+      "moreLinkParam": "",
+      "moreTextDisplay": "true"
+    }
+  ]
+}
