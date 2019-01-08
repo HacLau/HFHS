@@ -7,6 +7,8 @@ import android.animation.PropertyValuesHolder;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.animation.AnticipateOvershootInterpolator;
+import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
 
 import com.hf.hfhs.R;
@@ -26,9 +28,6 @@ public class WelcomeActivity extends AppCompatActivity {
     private void initView() {
         mImage = findViewById(R.id.Imageview);
         animator1();
-
-
-
     }
 
     /**
@@ -45,7 +44,8 @@ public class WelcomeActivity extends AppCompatActivity {
         //rotationX 表示围绕 X 轴旋转
         //rotationY:表示围绕 Y 轴旋转
         //rotation:表示围绕 Z 旋转
-        ObjectAnimator rotationAnimaotr = ObjectAnimator.ofFloat(mImage, "rotation", 0.5f, 720f);
+        ObjectAnimator rotationAnimaotr = ObjectAnimator.ofFloat(mImage, "rotationY", 0.5f, 360f);
+        rotationAnimaotr.setInterpolator(new OvershootInterpolator());
 
 
         //缩放动画，也有X及Y两个方向上设置
@@ -66,7 +66,7 @@ public class WelcomeActivity extends AppCompatActivity {
 //        animatorSet.play(rotationAnimaotr).with(translateYAnimaotr).before(rotationAnimaotr).after(scaleXAnimator).with(scaleYAnimator).after(alphaAnimator);
         animatorSet.play(rotationAnimaotr).with(scaleXAnimator).with(scaleYAnimator);
         //设置动画时间
-        animatorSet.setDuration(3000);
+        animatorSet.setDuration(2000);
         animatorSet.addListener(new Animator.AnimatorListener() {
             @Override
             public void onAnimationStart(Animator animation) {
@@ -76,6 +76,7 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public void onAnimationEnd(Animator animation) {
                 startActivity(new Intent(WelcomeActivity.this,MainActivity.class));
+                finish();
 
             }
 

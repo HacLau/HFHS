@@ -38,4 +38,6 @@
         <attr name="bottom_text_size" format="integer" />
 
     </declare-styleable>
+
+
 </resources>

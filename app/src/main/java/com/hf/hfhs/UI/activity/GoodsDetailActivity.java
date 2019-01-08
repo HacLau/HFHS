@@ -51,7 +51,6 @@ public class GoodsDetailActivity extends BaseActivity implements GoodsFragment.O
             public void onTabSelected(TabLayout.Tab tab) {
                 //tab被选的时候回调
                 mBinding.viewpager.setCurrentItem(tab.getPosition(), true);
-                Log.d("liucl",tab.getPosition() + "");
             }
 
             @Override

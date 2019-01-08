@@ -1,7 +1,7 @@
 package com.hf.hfhs;
 
 import com.hf.hfhs.bean.CartListBeanModel;
-import com.hf.hfhs.bean.GoodsIs;
+import com.hf.hfhs.bean.ProductShow;
 import com.hf.hfhs.bean.GoodsListBeanModel;
 
 import java.util.ArrayList;
@@ -38,52 +38,99 @@ public class Contants {
     };
     public final static String[] titles = {"商品", "详情"};
 
-
-    public static List<Integer> NF_8 = new ArrayList<Integer>(){
+    public static List<ProductShow> PRODUCTTYPE = new ArrayList<ProductShow>(){
         {
-            add(R.mipmap.banner1);
-            add(R.mipmap.banner2);
-            add(R.mipmap.banner3);
-            add(R.mipmap.banner4);
+            //大连8头海参
+            add(new ProductShow(1, new ArrayList<Integer>() {{
+                add(R.mipmap.banner1);
+                add(R.mipmap.banner1);
+                add(R.mipmap.banner1);
+                add(R.mipmap.banner1);
+            }},new ArrayList<String>(){
+                {
+                    add("精选大连海参,8只一盒.每盒的数量分量可自由选择!!");
+                    add("精选大连海参,8只一盒.每盒的数量分量可自由选择!!");
+                    add("精选大连海参,8只一盒.每盒的数量分量可自由选择!!");
+                    add("精选大连海参,8只一盒.每盒的数量分量可自由选择!!");
+                }
+            }));
+
+            //大连6头海参
+            add(new ProductShow(2, new ArrayList<Integer>() {{
+                add(R.mipmap.banner2);
+                add(R.mipmap.banner2);
+                add(R.mipmap.banner2);
+                add(R.mipmap.banner2);
+            }},new ArrayList<String>(){
+                {
+                    add("精选大连海参,6只一盒.每盒的数量分量可自由选择!!");
+                    add("精选大连海参,6只一盒.每盒的数量分量可自由选择!!");
+                    add("精选大连海参,6只一盒.每盒的数量分量可自由选择!!");
+                    add("精选大连海参,6只一盒.每盒的数量分量可自由选择!!");
+                }
+            }));
+
+            //鲍鱼8头
+            add(new ProductShow(3, new ArrayList<Integer>() {{
+                add(R.mipmap.banner3);
+                add(R.mipmap.banner3);
+                add(R.mipmap.banner3);
+                add(R.mipmap.banner3);
+            }},new ArrayList<String>(){
+                {
+                    add("精选优质鲍鱼,8只一盒.每盒的数量分量可自由选择!!");
+                    add("精选优质鲍鱼,8只一盒.每盒的数量分量可自由选择!!");
+                    add("精选优质鲍鱼,8只一盒.每盒的数量分量可自由选择!!");
+                    add("精选优质鲍鱼,8只一盒.每盒的数量分量可自由选择!!");
+                }
+            }));
+
+            //鲍鱼6头
+            add(new ProductShow(4, new ArrayList<Integer>() {{
+                add(R.mipmap.banner4);
+                add(R.mipmap.banner4);
+                add(R.mipmap.banner4);
+                add(R.mipmap.banner4);
+            }},new ArrayList<String>(){
+                {
+                    add("精选优质鲍鱼,6只一盒.每盒的数量分量可自由选择!!");
+                    add("精选优质鲍鱼,6只一盒.每盒的数量分量可自由选择!!");
+                    add("精选优质鲍鱼,6只一盒.每盒的数量分量可自由选择!!");
+                    add("精选优质鲍鱼,6只一盒.每盒的数量分量可自由选择!!");
+                }
+            }));
+
+            add(new ProductShow(5, new ArrayList<Integer>() {{
+                add(R.drawable.hs);
+                add(R.drawable.hs);
+                add(R.drawable.hs);
+                add(R.drawable.hs);
+            }},new ArrayList<String>(){
+                {
+                    add("xxxx,8只一盒.每盒的数量分量可自由选择!!");
+                    add("xxxx,8只一盒.每盒的数量分量可自由选择!!");
+                    add("xxxx,8只一盒.每盒的数量分量可自由选择!!");
+                    add("xxxx,8只一盒.每盒的数量分量可自由选择!!");
+                }
+            }));
+
+            add(new ProductShow(6, new ArrayList<Integer>() {{
+                add(R.drawable.by);
+                add(R.drawable.by);
+                add(R.drawable.by);
+                add(R.drawable.by);
+            }},new ArrayList<String>(){
+                {
+                    add("xxxx,8只一盒.每盒的数量分量可自由选择!!");
+                    add("xxxx,8只一盒.每盒的数量分量可自由选择!!");
+                    add("xxxx,8只一盒.每盒的数量分量可自由选择!!");
+                    add("xxxx,8只一盒.每盒的数量分量可自由选择!!");
+                }
+            }));
+
+
         }
 
     };
-
-    public static List<GoodsIs> NF_1 = new ArrayList<GoodsIs>(){
-        {
-            add(new GoodsIs(1, new ArrayList<Integer>() {{
-                add(R.mipmap.banner1);
-                add(R.mipmap.banner1);
-                add(R.mipmap.banner1);
-                add(R.mipmap.banner1);
-            }}));
-
-            add(new GoodsIs(2, new ArrayList<Integer>() {{
-                add(R.mipmap.banner2);
-                add(R.mipmap.banner2);
-                add(R.mipmap.banner2);
-                add(R.mipmap.banner2);
-            }}));
-
-            add(new GoodsIs(3, new ArrayList<Integer>() {{
-                add(R.mipmap.banner3);
-                add(R.mipmap.banner3);
-                add(R.mipmap.banner3);
-                add(R.mipmap.banner3);
-            }}));
-
-            add(new GoodsIs(4, new ArrayList<Integer>() {{
-                add(R.mipmap.banner4);
-                add(R.mipmap.banner4);
-                add(R.mipmap.banner4);
-                add(R.mipmap.banner4);
-            }}));
-
-
-        }
-
-    };
-
-
 
 }
